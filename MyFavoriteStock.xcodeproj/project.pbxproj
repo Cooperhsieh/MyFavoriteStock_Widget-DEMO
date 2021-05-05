@@ -15,6 +15,22 @@
 		DB82D343264249FB00F4B37D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB82D341264249FB00F4B37D /* LaunchScreen.storyboard */; };
 		DB82D34E264249FB00F4B37D /* MyFavoriteStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D34D264249FB00F4B37D /* MyFavoriteStockTests.swift */; };
 		DB82D359264249FB00F4B37D /* MyFavoriteStockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D358264249FB00F4B37D /* MyFavoriteStockUITests.swift */; };
+		DB82D36B26424A2D00F4B37D /* StockResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D36A26424A2D00F4B37D /* StockResource.swift */; };
+		DB82D37426424A4800F4B37D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D37326424A4800F4B37D /* Stock.swift */; };
+		DB82D38026424F7700F4B37D /* StockListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D37F26424F7700F4B37D /* StockListViewController.swift */; };
+		DB82D3852642502500F4B37D /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3842642502500F4B37D /* StockTableViewCell.swift */; };
+		DB82D3902642552300F4B37D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB82D38F2642552300F4B37D /* WidgetKit.framework */; };
+		DB82D3922642552300F4B37D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB82D3912642552300F4B37D /* SwiftUI.framework */; };
+		DB82D3952642552300F4B37D /* StockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3942642552300F4B37D /* StockWidget.swift */; };
+		DB82D3972642552500F4B37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB82D3962642552500F4B37D /* Assets.xcassets */; };
+		DB82D39B2642552500F4B37D /* StockWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB82D38D2642552300F4B37D /* StockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB82D3A42642554400F4B37D /* StockResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D36A26424A2D00F4B37D /* StockResource.swift */; };
+		DB82D3A92642554A00F4B37D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D37326424A4800F4B37D /* Stock.swift */; };
+		DB82D3B9264255F100F4B37D /* StockEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3B8264255F100F4B37D /* StockEntry.swift */; };
+		DB82D3BF2642568400F4B37D /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3BE2642568400F4B37D /* Provider.swift */; };
+		DB82D3CA264258EB00F4B37D /* StockSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3C9264258EB00F4B37D /* StockSmallView.swift */; };
+		DB82D3D0264258FB00F4B37D /* StockMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3CF264258FB00F4B37D /* StockMediumView.swift */; };
+		DB82D3D62642590900F4B37D /* StockLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB82D3D52642590900F4B37D /* StockLargeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +48,28 @@
 			remoteGlobalIDString = DB82D332264249F800F4B37D;
 			remoteInfo = MyFavoriteStock;
 		};
+		DB82D3992642552500F4B37D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB82D32B264249F800F4B37D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB82D38C2642552300F4B37D;
+			remoteInfo = StockWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB82D39F2642552600F4B37D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB82D39B2642552500F4B37D /* StockWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DB82D333264249F800F4B37D /* MyFavoriteStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoriteStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +86,21 @@
 		DB82D354264249FB00F4B37D /* MyFavoriteStockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFavoriteStockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB82D358264249FB00F4B37D /* MyFavoriteStockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteStockUITests.swift; sourceTree = "<group>"; };
 		DB82D35A264249FB00F4B37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB82D36A26424A2D00F4B37D /* StockResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockResource.swift; sourceTree = "<group>"; };
+		DB82D37326424A4800F4B37D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		DB82D37F26424F7700F4B37D /* StockListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewController.swift; sourceTree = "<group>"; };
+		DB82D3842642502500F4B37D /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		DB82D38D2642552300F4B37D /* StockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB82D38F2642552300F4B37D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DB82D3912642552300F4B37D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DB82D3942642552300F4B37D /* StockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockWidget.swift; sourceTree = "<group>"; };
+		DB82D3962642552500F4B37D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB82D3982642552500F4B37D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB82D3B8264255F100F4B37D /* StockEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockEntry.swift; sourceTree = "<group>"; };
+		DB82D3BE2642568400F4B37D /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		DB82D3C9264258EB00F4B37D /* StockSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockSmallView.swift; sourceTree = "<group>"; };
+		DB82D3CF264258FB00F4B37D /* StockMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockMediumView.swift; sourceTree = "<group>"; };
+		DB82D3D52642590900F4B37D /* StockLargeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockLargeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +125,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB82D38A2642552300F4B37D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB82D3922642552300F4B37D /* SwiftUI.framework in Frameworks */,
+				DB82D3902642552300F4B37D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +143,8 @@
 				DB82D335264249F800F4B37D /* MyFavoriteStock */,
 				DB82D34C264249FB00F4B37D /* MyFavoriteStockTests */,
 				DB82D357264249FB00F4B37D /* MyFavoriteStockUITests */,
+				DB82D3932642552300F4B37D /* StockWidget */,
+				DB82D38E2642552300F4B37D /* Frameworks */,
 				DB82D334264249F800F4B37D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +155,7 @@
 				DB82D333264249F800F4B37D /* MyFavoriteStock.app */,
 				DB82D349264249FB00F4B37D /* MyFavoriteStockTests.xctest */,
 				DB82D354264249FB00F4B37D /* MyFavoriteStockUITests.xctest */,
+				DB82D38D2642552300F4B37D /* StockWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +163,12 @@
 		DB82D335264249F800F4B37D /* MyFavoriteStock */ = {
 			isa = PBXGroup;
 			children = (
+				DB82D36926424A1700F4B37D /* Resource */,
+				DB82D37226424A3900F4B37D /* Model */,
+				DB82D37B26424B8300F4B37D /* View */,
 				DB82D336264249F800F4B37D /* AppDelegate.swift */,
 				DB82D338264249F800F4B37D /* SceneDelegate.swift */,
 				DB82D33A264249F800F4B37D /* ViewController.swift */,
-				DB82D33C264249F800F4B37D /* Main.storyboard */,
 				DB82D33F264249FB00F4B37D /* Assets.xcassets */,
 				DB82D341264249FB00F4B37D /* LaunchScreen.storyboard */,
 				DB82D344264249FB00F4B37D /* Info.plist */,
@@ -128,6 +194,64 @@
 			path = MyFavoriteStockUITests;
 			sourceTree = "<group>";
 		};
+		DB82D36926424A1700F4B37D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D36A26424A2D00F4B37D /* StockResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		DB82D37226424A3900F4B37D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D37326424A4800F4B37D /* Stock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB82D37B26424B8300F4B37D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D33C264249F800F4B37D /* Main.storyboard */,
+				DB82D37F26424F7700F4B37D /* StockListViewController.swift */,
+				DB82D3842642502500F4B37D /* StockTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB82D38E2642552300F4B37D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D38F2642552300F4B37D /* WidgetKit.framework */,
+				DB82D3912642552300F4B37D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB82D3932642552300F4B37D /* StockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D3C4264257B500F4B37D /* WidgetInterface */,
+				DB82D3942642552300F4B37D /* StockWidget.swift */,
+				DB82D3962642552500F4B37D /* Assets.xcassets */,
+				DB82D3982642552500F4B37D /* Info.plist */,
+				DB82D3B8264255F100F4B37D /* StockEntry.swift */,
+				DB82D3BE2642568400F4B37D /* Provider.swift */,
+			);
+			path = StockWidget;
+			sourceTree = "<group>";
+		};
+		DB82D3C4264257B500F4B37D /* WidgetInterface */ = {
+			isa = PBXGroup;
+			children = (
+				DB82D3C9264258EB00F4B37D /* StockSmallView.swift */,
+				DB82D3CF264258FB00F4B37D /* StockMediumView.swift */,
+				DB82D3D52642590900F4B37D /* StockLargeView.swift */,
+			);
+			path = WidgetInterface;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +262,12 @@
 				DB82D32F264249F800F4B37D /* Sources */,
 				DB82D330264249F800F4B37D /* Frameworks */,
 				DB82D331264249F800F4B37D /* Resources */,
+				DB82D39F2642552600F4B37D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB82D39A2642552500F4B37D /* PBXTargetDependency */,
 			);
 			name = MyFavoriteStock;
 			productName = MyFavoriteStock;
@@ -184,6 +310,23 @@
 			productReference = DB82D354264249FB00F4B37D /* MyFavoriteStockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DB82D38C2642552300F4B37D /* StockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB82D39C2642552600F4B37D /* Build configuration list for PBXNativeTarget "StockWidgetExtension" */;
+			buildPhases = (
+				DB82D3892642552300F4B37D /* Sources */,
+				DB82D38A2642552300F4B37D /* Frameworks */,
+				DB82D38B2642552300F4B37D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StockWidgetExtension;
+			productName = StockWidgetExtension;
+			productReference = DB82D38D2642552300F4B37D /* StockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +347,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DB82D332264249F800F4B37D;
 					};
+					DB82D38C2642552300F4B37D = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = DB82D32E264249F800F4B37D /* Build configuration list for PBXProject "MyFavoriteStock" */;
@@ -222,6 +368,7 @@
 				DB82D332264249F800F4B37D /* MyFavoriteStock */,
 				DB82D348264249FB00F4B37D /* MyFavoriteStockTests */,
 				DB82D353264249FB00F4B37D /* MyFavoriteStockUITests */,
+				DB82D38C2642552300F4B37D /* StockWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +398,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB82D38B2642552300F4B37D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB82D3972642552500F4B37D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -258,8 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB82D3852642502500F4B37D /* StockTableViewCell.swift in Sources */,
 				DB82D33B264249F800F4B37D /* ViewController.swift in Sources */,
 				DB82D337264249F800F4B37D /* AppDelegate.swift in Sources */,
+				DB82D36B26424A2D00F4B37D /* StockResource.swift in Sources */,
+				DB82D38026424F7700F4B37D /* StockListViewController.swift in Sources */,
+				DB82D37426424A4800F4B37D /* Stock.swift in Sources */,
 				DB82D339264249F800F4B37D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +439,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB82D3892642552300F4B37D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB82D3A42642554400F4B37D /* StockResource.swift in Sources */,
+				DB82D3D62642590900F4B37D /* StockLargeView.swift in Sources */,
+				DB82D3B9264255F100F4B37D /* StockEntry.swift in Sources */,
+				DB82D3952642552300F4B37D /* StockWidget.swift in Sources */,
+				DB82D3BF2642568400F4B37D /* Provider.swift in Sources */,
+				DB82D3A92642554A00F4B37D /* Stock.swift in Sources */,
+				DB82D3D0264258FB00F4B37D /* StockMediumView.swift in Sources */,
+				DB82D3CA264258EB00F4B37D /* StockSmallView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +466,11 @@
 			isa = PBXTargetDependency;
 			target = DB82D332264249F800F4B37D /* MyFavoriteStock */;
 			targetProxy = DB82D355264249FB00F4B37D /* PBXContainerItemProxy */;
+		};
+		DB82D39A2642552500F4B37D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB82D38C2642552300F4B37D /* StockWidgetExtension */;
+			targetProxy = DB82D3992642552500F4B37D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +613,7 @@
 		DB82D35E264249FB00F4B37D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +633,7 @@
 		DB82D35F264249FB00F4B37D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +734,48 @@
 			};
 			name = Release;
 		};
+		DB82D39D2642552600F4B37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NHCAR3DPU;
+				INFOPLIST_FILE = StockWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperhsieh.MyFavoriteStock.StockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB82D39E2642552600F4B37D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4NHCAR3DPU;
+				INFOPLIST_FILE = StockWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cooperhsieh.MyFavoriteStock.StockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +811,15 @@
 			buildConfigurations = (
 				DB82D364264249FB00F4B37D /* Debug */,
 				DB82D365264249FB00F4B37D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB82D39C2642552600F4B37D /* Build configuration list for PBXNativeTarget "StockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB82D39D2642552600F4B37D /* Debug */,
+				DB82D39E2642552600F4B37D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
